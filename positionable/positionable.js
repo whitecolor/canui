@@ -134,7 +134,7 @@ steal('jquery',
 	 * This plugin is built on top of the [jQuery UI Position Plugin](http://docs.jquery.com/UI/Position),
 	 * so you may refer to their documentation for more advanced usage.
 	 */
-	can.Control("can.ui.Positionable",
+	return can.Control("can.ui.Positionable",
 	 {
 		pluginName : 'positionable',
 	 	rhorizontal : /left|center|right/,
@@ -143,7 +143,8 @@ steal('jquery',
 		vdefault : "center",
 	 	defaults : {
 			iframe: false,
-			of: window,
+			containment: window,
+            of: window,
 			keep : false, //keeps it where it belongs,
 			hideWhenInvisible : false
 	 	},
@@ -362,7 +363,8 @@ steal('jquery',
 			$.each( [ "left", "top" ], function( i, dir ) {
 				if ( $.ui.position[ collision[i] ] ) {
 					var isEvent = ((options.of && options.of.preventDefault) != null),
-						within = $(isEvent || !options.of ? window : options.of),
+						//within = $(isEvent || !options.of ? window : options.of),
+                        within = $(options.containment),
 						marginLeft = parseInt( $.css( elem[0], "marginLeft", true ) ) || 0,
 						marginTop = parseInt( $.css( elem[0], "marginTop", true ) ) || 0;
 						
