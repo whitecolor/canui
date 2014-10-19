@@ -1,8 +1,7 @@
 {
   "name": "canui",
   "repo": "bitovi/canui",
-  "description": "Can do JavaScript MVC",
-	"version": "1.0.0",
+  "version": "1.0.0",
   "main": "canui.js",
   "keywords": [
   ],
