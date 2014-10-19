@@ -6,6 +6,9 @@
   "main": "canui.js",
   "keywords": [
   ],
+  "ignore": [
+  	"test"
+  ],
   "license": "MIT",
   "devDependencies": {
   }
