@@ -1,0 +1,12 @@
+{
+  "name": "CanUI",
+  "repo": "bitovi/canui",
+  "description": "Can do JavaScript MVC",
+	"version": "1.0.0",
+  "main": "canui.js",
+  "keywords": [
+  ],
+  "license": "MIT",
+  "devDependencies": {
+  }
+}
